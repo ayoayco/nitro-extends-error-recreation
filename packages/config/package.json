@@ -1,0 +1,12 @@
+{
+  "name": "@some-local/config",
+  "version": "0.0.1",
+  "description": "some local nitro config",
+  "main": "config.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ayo Ayco",
+  "license": "MIT"
+}

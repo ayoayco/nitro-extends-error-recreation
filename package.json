@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "nitropack dev",
+    "prepare": "nitropack prepare",
+    "dev": "nitropack dev",
+    "build": "nitropack build",
+    "preview": "node .output/server/index.mjs",
+    "build:preview": "npm run build && npm run preview"
+  },
+  "dependencies": {
+    "@some-local/config": "./packages/config",
+    "nitropack": "^2.7.0"
+  },
+  "workspaces": [
+    "packages/config"
+  ]
+}
