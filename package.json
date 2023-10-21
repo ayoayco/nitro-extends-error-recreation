@@ -9,6 +9,7 @@
     "build:preview": "npm run build && npm run preview"
   },
   "dependencies": {
+    "@mcflyjs/config": "^0.0.1",
     "@some-local/config": "*",
     "nitropack": "^2.7.0"
   },

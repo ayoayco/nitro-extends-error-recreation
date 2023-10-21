@@ -1,4 +1,4 @@
-# recreation of extends error when dependency is local workspace
+# recreation of extends error
 
 When running `npm start` or `npm run build:preview` in this project, it produces console [message](#message) below
 
@@ -34,3 +34,19 @@ import config from "@some-local/config";
 export default defineNitroConfig({
   ...config(),
 });
+```
+
+## Also happens when config used is from published node package
+
+Tried using a published package and I get same console message
+
+```ts
+import McFly from "@mcflyjs/config";
+
+/**
+ * @see https://nitro.unjs.io/config
+ */
+export default defineNitroConfig({
+  extends: McFly(),
+});
+```
