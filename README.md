@@ -1,6 +1,8 @@
 # recreation of extends error when dependency is local workspace
 
-When running `npm run build:preview` in this project, the [`nitro.config.ts` content](#nitro-config-content) below produces console [message](#message)
+When running `npm run build:preview` in this project, it produces console [message](#message) below
+
+`@some-local/config` is from a node workspace in same repo found in `./packages/config`
 
 ## nitro config content
 ```ts
