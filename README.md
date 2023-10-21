@@ -1,6 +1,8 @@
 # recreation of extends error when dependency is local workspace
 
-The following nitro.config.ts content produces
+When running `npm run build:preview` in this project, the [`nitro.config.ts` content](#nitro-config-content) below produces console [message](#message)
+
+## nitro config content
 ```ts
 import config from "@some-local/config";
 
@@ -10,4 +12,9 @@ import config from "@some-local/config";
 export default defineNitroConfig({
   extends: config(),
 });
+```
+## message
+
+```
+Cannot extend config from `{"devServer":{"watch":["./src/pages","./src/components"]},"serverAssets":[{"baseName":"pages","dir":"./src/pages"},{"baseName":"components","dir":"./src/components"}]}` in /Users/ayoayco/Projects/@ayoayco/nitro-extends-error-recreation
 ```
